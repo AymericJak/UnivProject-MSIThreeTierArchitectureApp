@@ -42,9 +42,10 @@ def demo():
     bd.ajoutVille(tab[0][0])
     #bd.ajoutReleve(tab[1][0],tab[1][1],tab[1][2],tab[1][3],tab[0][0])
     return tab
+
 @app.route('/ville')
 def ville():
-    return render_template(ville.html);
+    return render_template('ville.html');
 
 
 if __name__ == '__main__':

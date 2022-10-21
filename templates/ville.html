@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href={{ url_for('static',filename='styles/style.css') }} rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Ville {{nom}}</title>
+</head>
+<body>
+    <h1>Ville {{nom}}</h1>
+    <h2>Date début observation : {{date_debut}}</h2><br>
+    <h2>Date fin observation : {{date_fin}}</h2><br>
+    <h2>Le Graphique :{{graphique}}</h2><br>
+    <h2>jours d'observation : {{nb_jours}}</h2><br>
+    <h2>temperature : {{température}}</h2><br>
+    <table>
+    <thead>
+        <tr>
+            <th colspan="6">Tableau des données</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>nom du datacentre</td>
+            <td>localisation</td>
+            <td>horodatage</td>
+            <td>température</td>
+            <td>pression</td>
+            <td>humidité</td>
+        </tr>
+    </tbody>
+</table><br>
+</body>
+</html>
